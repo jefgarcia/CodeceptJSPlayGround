@@ -2,7 +2,5 @@
 Feature('Firsttest');
 
 Scenario('test something', (I) => {
-    I.amOnPage('https://github.com');
-    I.see('GitHub');
-
+    I.amOnPage('http://automationpractice.com/index.php');
 });
