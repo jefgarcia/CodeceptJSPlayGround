@@ -2,15 +2,21 @@ exports.config = {
   tests: './*_test.js',
   output: './output',
   helpers: {
-    Puppeteer: {
+    WebDriver: {
       url: 'http://localhost',
-      show: true,
+      browser: 'firefox'
     }
   },
   include: {
     I: './steps_file.js'
   },
-  bootstrap: null,
-  mocha: {},
-  name: 'CodeceptJSPlayGround'
+  plugins: {
+    wdio: {
+      enabled: true,
+      services: ['selenium-standalone']
+    },
+    bootstrap: null,
+    mocha: {},
+    name: 'CodeceptJSPlayGround'
+  }
 }
