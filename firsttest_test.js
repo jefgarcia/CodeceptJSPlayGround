@@ -1,7 +1,7 @@
 /// <reference path="./steps.d.ts" />
-Feature('Firsttest');
+Feature('Navigation');
 
-Scenario('test something', (I) => {
+Scenario('Mega Menu Test', (I) => {
     I.amOnPage('http://automationpractice.com/index.php');
     I.moveCursorTo('//*[@id="block_top_menu"]/ul/li[2]', 1, 1);
     I.wait(2);
